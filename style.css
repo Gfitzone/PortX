@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    background-color: rgb(1, 31, 2);
+    height: 80%;
+   
+      }
+    
+.navbar .background{
+    position: fixed;
+  top: 0;
+  z-index: 1000;
+  margin-top: 60px;
+
+}
+.background{
+    height:20vh;
+    position:fixed;
+}
+.logo{
+    
+    display: flex;
+    padding-left: 50px;
+    padding-top: 30px;
+   padding-right: 280px;
+    padding-bottom: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+    font-style: italic;
+    color: orange;
+   }
+
+.logo img{
+   
+    border: 3px solid rgb(41, 27, 27);
+    border-radius: 70px;
+    height:100px;
+    width: 160px;
+    
+}
+
+.navlist {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.navlist li{
+list-style: none;
+padding:26px 30px;
+font-size: 40px;
+display: flex;
+
+
+}
+.navlist li a{
+text-decoration: none;
+color: orange;
+
+}
+.navlist li a:hover{
+    color:antiquewhite;
+
+}
+
+
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url('download.png');
+    background-size: cover;
+    background-blend-mode: darken;
+    width:100%;
+   
+}
+.firstsection{
+height: 100vh;
+   background-color: black;
+   display: flex;
+  
+}
+
+.firsthalf{
+    width: 100%;
+   margin-left: -30px;
+}
+.firsthalf img{
+    width: 70vh;
+
+    display: block;
+    padding-left: 30px;
+    padding-top: 60px;
+}
+#element {
+    color: rgb(250, 144, 6);
+    font-size: 40px;
+    display: flex;
+    margin-top: 30px;
+}
+.secondhalf{
+    width: 80%;
+    color: azure;
+    margin-top: 260px;
+    margin-left: 90px;
+    }
+    .secondhalf p{
+        font-size: 40px;
+        color: rgb(250, 144, 6);
+       padding: 12px 15px;
+    }
+    button{
+       background-color: black;
+        border-radius: 10px;
+       border:7px solid rgb(250, 144, 6);
+    }
+    .secondsection{
+        height: 70vh;
+        background-color: rgb(0, 0, 10);
+        color:rgb(250, 144, 6);
+        padding-top: 80px;
+        
+    }
+    .secondsection h1{
+        font-size: 50px;
+       margin: 0 50px;
+       padding-top: 40px;
+    }
+    .secondsection p{
+        padding-top: 30px;
+        padding-left: 40px;
+        font-size: 23px;
+        padding-right: 40px;
+        line-height: 1.5;
+        text-align: justify;
+    }
+     .thirdsection{
+        height: 120vh;
+        background-color: rgb(28, 15, 1);
+        color:rgb(250, 144, 6);
+        display: grid;
+        grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+       gap: 15px;
+       padding-top: 25vh;
+       overflow-y: auto;
+      
+        
+    }
+    .thirdsection img{
+        width: 97%;
+        height: 77%;
+        border-radius: 9px;
+        border-color: orangered;
+        object-fit: cover;
+    }
+    .thirdsection img:hover{
+        transform:scale(1.1);
+        transition: 1s;
+    }
+    .thirdsection h1{
+        font-size: 50px;
+        justify-content: center;
+      
+       padding-top: 30px;
+       padding-left: 4vh;
+    }
+    .fourthsection{
+       background-color: rgb(224, 250, 177);
+        height: 17vh;
+       padding: 0;
+       margin: 0;
+       overflow: hidden;
+    }
+    
+    
+    .social{
+        justify-content: center;
+        padding-left: 43.5%;
+        padding-top: 2vh;
+       padding-bottom: 1vh;
+
+    }
+    .social a{
+        padding: 0 15px;
+    }
+    .footer b{
+        font-size: 25px;
+    }
+    .footer{
+     
+
+        justify-content: center;
+        padding-left: 42%;
+        padding-bottom: 30px;
+        height: 4vh;
+        background-color: rgb(9, 7, 2, 1.0);
+        color:rgb(250, 144, 6);
+        padding-top: 1vh;
+
+
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        overflow-x:hidden ;
+}
+div{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.firsthalf, .secondsection, .fourthsection{
+    
+    overflow: hidden;
+}   
+@media(max-width:467px)  {
+    .thirdsection h1{
+        padding-left: 3vh;
+    }
+    .thirdsection{
+        height: 300vh;
+    }
+    .thirdsection img{
+        height:50vh;
+        width: 50vh;
+        padding-left: 3vh;
+    }
+    .background{
+        width:100%
+        }
+        .navbar{
+         width: 100%;
+     
+         position: fixed;
+     display: flex;
+        }
+        .navlist{
+            width:100%;
+            margin-left: -32vh;
+        }
+        .navlist li {
+        padding-bottom: 1vh;
+        font-size: 3vh;
+       
+        padding-inline: 6px;
+       
+       
+        }
+        .logo {
+           
+            padding-left:2vh;
+         padding-top: 2vh;
+         font-size: 5vh;
+        
+        }
+        
+        .firstsection {
+         flex-direction: column;
+         text-align: center;
+        margin-top: -5vh;
+        
+        }
+     .firstsection img{
+         width: 100%;
+         height: 65vh;
+         width: 50vh;
+     margin-left: 13%;
+     
+     }
+     .secondhalf {
+     margin-left: 7vh;
+      margin-top: 0.5vh;
+     }
+     .secondhalf p, button{
+         font-size: 4vh;
+     }
+     #element{
+         margin-top: 1vh;
+         font-size: 5vh;
+     }
+        
+       
+        .secondsection{
+         width: 120vh;
+           height: 120vh;
+          
+     
+        }
+        .footer{
+        padding-left: 17%;
+        }
+     
+        .social{
+        padding-left: 30%;
+        }
+}
+
+@media(min-width:701px) and (max-width:1200px){
+   
+    .secondhalf{
+        overflow: hidden;
+    }
+    .navbar{
+        width: 100%;
+    
+        position: fixed;
+    display: flex;
+       }
+       .navlist{
+           margin-right: 4vh;
+       }
+       .navlist li {
+       padding-top: 6vh;
+       font-size: 6vh;
+     
+    padding-inline: 21px;
+      
+       }
+       .logo {
+        padding-right: 10px;
+        padding-left:2vh;
+        padding-top: 6vh;
+        font-size: 7vh;
+       }
+   
+}
+   
+   
+   @media(min-width:468px) and (max-width:700px){
+
+   
+   .background{
+   width:100%
+   }
+   .navbar{
+    width: 100%;
+
+    position: fixed;
+display: flex;
+   }
+   .navlist li {
+   padding-top: 4px;
+   font-size: 20px;
+  
+   padding-inline: 5px;
+  
+   }
+   .logo{
+    padding-right: 10px;
+    padding-left:4vh;
+    padding-top: 5vh;
+    font-size: 35px;
+   }
+   
+   .firstsection {
+    flex-direction: column;
+    text-align: center;
+   }
+.firstsection img{
+    width: 100%;
+    height: 65vh;
+    width: 50vh;
+margin-left: 25%;
+
+}
+.secondhalf {
+margin-left: 9vh;
+ margin-top: 0.5vh;
+}
+.secondhalf p, button{
+    font-size: 6vh;
+}
+#element{
+    margin-top: 1vh;
+    font-size: 5vh;
+}
+   
+  
+   .secondsection{
+    width: 120vh;
+      height: 100vh;
+     
+
+   }
+   .footer{
+   padding-left: 25%;
+   }
+
+   .social{
+   padding-left: 35%;
+   }
+/*.thirdsection{
+    width: 120vh;
+     height: 300vh;
+}  */ 
+
+
+}
+
